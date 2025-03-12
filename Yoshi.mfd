@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2025 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="input" library="core" uid="6" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint/>
+					</targets>
+					<view ltx="172" lty="46" rbx="245" rby="82"/>
+					<data>
+						<input datatype="string" previewvalue="C:\Users\Administrator\Documents\Yoshi\test aanmaak xbrl01.xlsx" usepreviewvalue="1"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="11" kind="5">
+					<sources>
+						<datapoint pos="0" key="7"/>
+						<datapoint pos="1" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="249" lty="512" rbx="299" rby="565"/>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="125" lty="532" rbx="194" rby="549"/>
+					<data>
+						<constant value="1772594" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="bd-rpt-erf-aangifte-2024" library="xbrl" uid="7" kind="27">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1" XBRLShowAllConcepts="1" XBRLShowAllConceptsRaw="1"/>
+					<view ltx="1426" lty="74" rbx="2075" rby="1113"/>
+					<data>
+						<root scrollposition="8472">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.xbrl.org/2003/instance"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+									<namespace uid="http://www.xbrl.org/2003/linkbase"/>
+									<namespace uid="http://www.nltaxonomie.nl/nt18/sbr/20230301/dictionary/nl-common-data"/>
+									<namespace uid="http://www.nltaxonomie.nl/2013/xbrl/sbr-dimensional-concepts"/>
+									<namespace uid="http://www.nltaxonomie.nl/nt18/bd/20240221/dictionary/bd-data-ext1"/>
+									<namespace uid="http://www.nltaxonomie.nl/nt18/bd/20240221/dictionary/bd-tuples-ext1"/>
+									<namespace uid="http://www.nltaxonomie.nl/nt18/bd/20231213/dictionary/bd-tuples"/>
+									<namespace uid="view"/>
+									<namespace uid="http://www.nltaxonomie.nl/nt18/bd/20240221/presentation/bd-abstr-ext1"/>
+									<namespace/>
+									<namespace uid="http://www.nltaxonomie.nl/nt18/bd/20231213/dictionary/bd-data"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="xbrl" expanded="1" showdefaultsnode="1">
+										<entry name="defaults" ns="1" expanded="1">
+											<entry name="unit">
+												<entry name="divide" expanded="1">
+													<entry name="unitNumerator" expanded="1"/>
+													<entry name="unitDenominator" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="identifier" expanded="1"/>
+										</entry>
+										<entry name="bd:linkrole:bd-lr-hd-ext1_cube-nodim" ns="8" expanded="1">
+											<entry name="ValidationTable" ns="4" expanded="1">
+												<dimensions>
+													<qname name="identifier"/>
+													<qname name="period"/>
+												</dimensions>
+												<entry name="identifier" expanded="1">
+													<entry name="identifier" expanded="1"/>
+													<entry name="period" expanded="1">
+														<entry name="period" expanded="1"/>
+														<entry name="context" expanded="1">
+															<entry name="ValidationLineItems" ns="4" expanded="1">
+																<entry name="HouseNumberNL" ns="3" expanded="1">
+																	<entry name="footnote" ns="2" expanded="1"/>
+																</entry>
+																<entry name="PlaceOfResidenceNL" ns="3" expanded="1">
+																	<entry name="footnote" ns="2" expanded="1"/>
+																</entry>
+																<entry name="PostalCodeNL" ns="3" expanded="1"/>
+															</entry>
+															<entry name="BusinessSpecification" ns="6" expanded="1">
+																<entry name="SubstantialInterestSharesCapitalCommon" ns="5" inpkey="13" expanded="1"/>
+															</entry>
+															<entry name="BusinessSuccessionFacilitiesSpecification" ns="6" expanded="1">
+																<entry name="BusinessName" ns="5" inpkey="21" expanded="1"/>
+															</entry>
+															<entry name="ContactAddressPresentation" ns="6" expanded="1">
+																<entry name="AddressPresentation" ns="7" expanded="1">
+																	<entry name="PostalCodeNL" ns="3" expanded="1"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="bd:linkrole:bd-lr-pre-ext1_aangifte-erfbelasting" ns="8" expanded="1">
+											<entry name="Dimensionless (presentation)" ns="10" expanded="1">
+												<dimensions>
+													<qname name="identifier"/>
+													<qname name="period"/>
+												</dimensions>
+												<entry name="identifier" expanded="1">
+													<entry name="identifier" expanded="1"/>
+													<entry name="period" expanded="1">
+														<entry name="period" expanded="1"/>
+														<entry name="context" expanded="1">
+															<entry name="InheritanceTaxTitle" ns="9" expanded="1">
+																<entry name="ContactTitle" ns="9" expanded="1">
+																	<entry name="ContactAddressPresentation" ns="6" expanded="1">
+																		<entry name="AddressAbroadPresentation" ns="7" expanded="1"/>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="viewallconcepts" ns="8" expanded="1">
+											<entry name="Dimensionless" ns="10" expanded="1">
+												<dimensions>
+													<qname name="identifier"/>
+													<qname name="period"/>
+												</dimensions>
+												<entry name="identifier" expanded="1">
+													<entry name="identifier" expanded="1"/>
+													<entry name="period" expanded="1">
+														<entry name="period" expanded="1"/>
+														<entry name="context" expanded="1">
+															<entry name="ProvidedBuildingTransferDate" ns="5" expanded="1"/>
+															<entry name="ProvidedBuildingTransferredPartNumerator" ns="5" expanded="1"/>
+															<entry name="ProvidedBuildingTransferredPartValue" ns="5" expanded="1"/>
+															<entry name="ProvidedBuildingTransferredPurchasePrice" ns="5" expanded="1"/>
+															<entry name="RecipientDateOfBirth" ns="5" expanded="1"/>
+															<entry name="SignatureDate" ns="5" expanded="1"/>
+															<entry name="DeclarantIdentificationNumber" ns="5" expanded="1"/>
+															<entry name="DeclarantNotaryNumber" ns="5" expanded="1"/>
+															<entry name="DonationReceiverDonationDate" ns="5" expanded="1"/>
+															<entry name="InheritanceDonationsOnPaperInterestPercentage" ns="5" expanded="1"/>
+															<entry name="TaxpayerInitials" ns="5" expanded="1"/>
+															<entry name="ContactEmailAddressFull" ns="11" expanded="1"/>
+															<entry name="SoftwarePackageName" ns="11" expanded="1"/>
+															<entry name="SoftwarePackageVersion" ns="11" expanded="1"/>
+															<entry name="SoftwareVendorAccountNumber" ns="11" expanded="1"/>
+															<entry name="RevenueEntitlementIdentification" ns="11" expanded="1"/>
+															<entry name="RevenueEntitlementIdentificationNumber" ns="11" expanded="1"/>
+															<entry name="ForeignTaxExemptionMethodProfitSpecification" ns="7" expanded="1"/>
+															<entry name="DeclarantPresentation" ns="6" expanded="1"/>
+															<entry name="EstateSceneryLawSpecification" ns="6" expanded="1"/>
+															<entry name="ContactAddressPresentation" ns="6" expanded="1">
+																<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+																	<entry name="CountryCodeISO" ns="3" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="GiftSpecification" ns="6" expanded="1">
+																<entry name="GiftMovablePropertyType" ns="5" expanded="1"/>
+															</entry>
+															<entry name="PostponementSpecification" ns="6" expanded="1"/>
+															<entry name="ProvidedBuildingAddressPresentation" ns="6" expanded="1">
+																<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+																	<entry name="CountryCodeISO" ns="3" expanded="1"/>
+																	<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+																</entry>
+																<entry name="AddressPresentation" ns="7" expanded="1">
+																	<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+																	<entry name="PostalCodeNL" ns="3" expanded="1"/>
+																	<entry name="StreetNameNL" ns="3" expanded="1"/>
+																</entry>
+															</entry>
+															<entry name="ProvidedBuildingSpecification" ns="6" expanded="1">
+																<entry name="ProvidedBuildingCommercialValueAmount" ns="5" expanded="1"/>
+																<entry name="ProvidedBuildingTransferDate" ns="5" expanded="1"/>
+																<entry name="ProvidedBuildingTransferredPartNumerator" ns="5" expanded="1"/>
+																<entry name="ProvidedBuildingTransferredPartValue" ns="5" expanded="1"/>
+																<entry name="ProvidedBuildingTransferredPurchasePrice" ns="5" expanded="1"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="viewallconceptsraw" ns="8" expanded="1">
+											<entry name="PostalCodeNL" ns="3" expanded="1">
+												<entry name="footnote" ns="2" expanded="1"/>
+											</entry>
+											<entry name="LegalDeliveryDate" ns="5" expanded="1"/>
+											<entry name="ProvidedBuildingTransferDate" ns="5" expanded="1"/>
+											<entry name="ProvidedBuildingTransferredPartValue" ns="5" expanded="1"/>
+											<entry name="ProvidedBuildingTransferredPurchasePrice" ns="5" expanded="1"/>
+											<entry name="RecipientDateOfBirth" ns="5" expanded="1"/>
+											<entry name="RecipientInitials" ns="5" expanded="1"/>
+											<entry name="RecipientLegalPersonName" ns="5" expanded="1"/>
+											<entry name="RecipientPartnerDateOfBirth" ns="5" expanded="1"/>
+											<entry name="RecipientPartnerIdentificationNumber" ns="5" expanded="1"/>
+											<entry name="RequestAppliancePassOverSchemeIncomeTaxBusinessIndication" ns="5" expanded="1"/>
+											<entry name="ResidenceClauseInPartnershipContractIndication" ns="5" expanded="1"/>
+											<entry name="NotaryConvenantCreationDate" ns="5" expanded="1"/>
+											<entry name="TaxSimilarDifferentCountryPaid" ns="5" expanded="1"/>
+											<entry name="TaxSimilarDifferentCountryPaidCountryCode" ns="5" expanded="1"/>
+											<entry name="TransferTaxPaid" ns="5" expanded="1"/>
+											<entry name="TransferTaxTaxationElement" ns="5" expanded="1"/>
+											<entry name="TrustCapitalHousedCountryCode" ns="5" expanded="1"/>
+											<entry name="UsefructInterestFreeLoanNaturalPersonIndication" ns="5" expanded="1"/>
+											<entry name="FiscalYear" ns="5" expanded="1"/>
+											<entry name="GiftBenefitAmount" ns="5" expanded="1"/>
+											<entry name="GiftBusinessLegalForm" ns="5" expanded="1"/>
+											<entry name="GiftBusinessTransferredPartPurchasePrice" ns="5" expanded="1"/>
+											<entry name="GiftBusinessTransferredPartValue" ns="5" expanded="1"/>
+											<entry name="GiftDeferredTaxTransferredBusinessPart" ns="5" expanded="1"/>
+											<entry name="GiftExemptionANBIOrSBBI" ns="5" expanded="1"/>
+											<entry name="GiftExemptionByKingAndRelativesByMarriage" ns="5" expanded="1"/>
+											<entry name="GiftExemptionByStateProvinceOrMunicipal" ns="5" expanded="1"/>
+											<entry name="GiftExemptionOther" ns="5" expanded="1"/>
+											<entry name="GiftExtensionPartnerConceptIndication" ns="5" expanded="1"/>
+											<entry name="GiftMovablePropertyValue" ns="5" expanded="1"/>
+											<entry name="GiftPreservedAssessmentIndication" ns="5" expanded="1"/>
+											<entry name="GiftRevocableGiftIndication" ns="5" expanded="1"/>
+											<entry name="GiftStockValue" ns="5" expanded="1"/>
+											<entry name="GiftTaxPayerIndication" ns="5" expanded="1"/>
+											<entry name="GiftTrustCapitalIdentificationNumber" ns="5" expanded="1"/>
+											<entry name="GiftTrustCapitalName" ns="5" expanded="1"/>
+											<entry name="DonorPreviousOwnerIndication" ns="5" expanded="1"/>
+											<entry name="DonorSurname" ns="5" expanded="1"/>
+											<entry name="ExcessiveInheritanceInterestPaidDuringLifeIndication" ns="5" expanded="1"/>
+											<entry name="ExemptionAcquisitionTaxedByIncomeTax" ns="5" expanded="1"/>
+											<entry name="ExemptionPaymentToRelativesEmployee" ns="5" expanded="1"/>
+											<entry name="BusinessIdentificationNumber" ns="5" expanded="1"/>
+											<entry name="BusinessName" ns="5" expanded="1"/>
+											<entry name="ContactTaxConsultantNumber" ns="5" expanded="1"/>
+											<entry name="ContactTelephoneNumber" ns="5" expanded="1"/>
+											<entry name="EstateBuildingsDestinationValue" ns="5" expanded="1"/>
+											<entry name="EstateLandsDestinationValue" ns="5" expanded="1"/>
+											<entry name="NotaryInitials" ns="5" expanded="1"/>
+											<entry name="NotaryNumber" ns="5" expanded="1"/>
+											<entry name="NotaryPlaceOfResidence" ns="5" expanded="1"/>
+											<entry name="NotaryPrefix" ns="5" expanded="1"/>
+											<entry name="NotarySurname" ns="5" expanded="1"/>
+											<entry name="CentralDigitalRepertoryNumber" ns="5" expanded="1"/>
+											<entry name="ContactInstitutionName" ns="5" expanded="1"/>
+											<entry name="ContactNotaryNumber" ns="5" expanded="1"/>
+											<entry name="ProvidedBuildingCadastralDefinition" ns="5" expanded="1"/>
+											<entry name="TrustCapitalLegalForm" ns="5" expanded="1"/>
+											<entry name="RetirementBenefitsRedemption" ns="5" expanded="1"/>
+											<entry name="ContactEmailAddressFull" ns="11" expanded="1"/>
+											<entry name="ContactInitials" ns="11" expanded="1"/>
+											<entry name="ContactPrefix" ns="11" expanded="1"/>
+											<entry name="ContactSurname" ns="11" expanded="1"/>
+											<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+											<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+											<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+											<entry name="SoftwarePackageName" ns="11" expanded="1"/>
+											<entry name="StreetNameAbroad" ns="11" expanded="1"/>
+											<entry name="RelationshipTaxpayerSurname" ns="11" expanded="1"/>
+											<entry name="RevenueEntitlementIdentification" ns="11" expanded="1"/>
+											<entry name="AddressAbroadPresentation" ns="7" expanded="1"/>
+											<entry name="IntraCommunityABCSupplies" ns="7" expanded="1"/>
+											<entry name="IntraCommunityABCSuppliesCorrection" ns="7" expanded="1"/>
+											<entry name="OwnHouseSecondHomeImmovablePropertyOtherSpecification" ns="7" expanded="1">
+												<entry name="OwnHouseSecondHomeImmovablePropertyOtherImmovablePropertyCityName" ns="11" expanded="1"/>
+												<entry name="OwnHouseSecondHomeImmovablePropertyOtherImmovablePropertyLawAddress" ns="11" expanded="1"/>
+											</entry>
+											<entry name="DeclarantPresentation" ns="6" expanded="1">
+												<entry name="DeclarantInstitutionName" ns="5" expanded="1"/>
+												<entry name="NotaryNumber" ns="5" expanded="1"/>
+												<entry name="SignatureDateDeclarant" ns="5" expanded="1"/>
+												<entry name="TaxpayerInitials" ns="5" expanded="1"/>
+												<entry name="TaxpayerPrefix" ns="5" expanded="1"/>
+												<entry name="TaxpayerSurname" ns="5" expanded="1"/>
+											</entry>
+											<entry name="EstateSceneryLawSpecification" ns="6" expanded="1">
+												<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+													<entry name="CountryCodeISO" ns="3" expanded="1"/>
+													<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+												</entry>
+												<entry name="AddressPresentation" ns="7" expanded="1">
+													<entry name="HouseNumberAddition" ns="3" expanded="1"/>
+													<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+													<entry name="PostalCodeNL" ns="3" expanded="1"/>
+													<entry name="StreetNameNL" ns="3" expanded="1"/>
+												</entry>
+												<entry name="AppealOnFaciltySceneryLawIndication" ns="5" expanded="1"/>
+												<entry name="EstateBuildingEconomicValue" ns="5" expanded="1"/>
+												<entry name="EstateLandsEconomicValue" ns="5" expanded="1"/>
+												<entry name="EstateName" ns="5" expanded="1"/>
+												<entry name="EstateRankingRequestDate" ns="5" expanded="1"/>
+											</entry>
+											<entry name="ImmovablePropertySpecification" ns="6" expanded="1">
+												<entry name="AddressAbroadPresentation" ns="7">
+													<entry name="CountryCodeISO" ns="3" expanded="1"/>
+													<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+													<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+													<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+													<entry name="StreetNameAbroad" ns="11" expanded="1"/>
+												</entry>
+												<entry name="AddressPresentation" ns="7" expanded="1">
+													<entry name="HouseLetterNL" ns="3" expanded="1"/>
+													<entry name="HouseNumberAddition" ns="3" expanded="1"/>
+													<entry name="HouseNumberNL" ns="3" expanded="1"/>
+													<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+													<entry name="PostalCodeNL" ns="3" expanded="1"/>
+													<entry name="StreetNameNL" ns="3" expanded="1"/>
+												</entry>
+												<entry name="ImmovablePropertyAffiliatedPersonHiredOutIndication" ns="5" expanded="1"/>
+												<entry name="ImmovablePropertyHiredOutTemporarilyIndication" ns="5" expanded="1"/>
+												<entry name="ImmovablePropertyLargerPartHouseSeparatelySaleableIndication" ns="5" expanded="1"/>
+											</entry>
+											<entry name="BusinessSuccessionFacilitiesSpecification" ns="6" expanded="1">
+												<entry name="ProvidedBuildingHeritanceSpecification" ns="6" expanded="1">
+													<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+														<entry name="CountryCodeISO" ns="3" expanded="1"/>
+														<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+														<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+														<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+														<entry name="StreetNameAbroad" ns="11" expanded="1"/>
+													</entry>
+													<entry name="AddressPresentation" ns="7">
+														<entry name="HouseLetterNL" ns="3" expanded="1"/>
+														<entry name="HouseNumberAddition" ns="3" expanded="1"/>
+														<entry name="HouseNumberNL" ns="3" expanded="1"/>
+														<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+														<entry name="PostalCodeNL" ns="3" expanded="1"/>
+														<entry name="StreetNameNL" ns="3" expanded="1"/>
+													</entry>
+													<entry name="ProvidedBuildingCadastralDefinition" ns="5" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="ProvidedBuildingHeritanceSpecification" ns="6" expanded="1">
+												<entry name="ProvidedBuildingCadastralDefinition" ns="5" expanded="1"/>
+											</entry>
+											<entry name="TransfereeTaxDeclarationSpecification" ns="6" expanded="1">
+												<entry name="AddressPresentation" ns="7" expanded="1"/>
+											</entry>
+											<entry name="CorrespondenceAddressPresentation" ns="6" expanded="1">
+												<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+													<entry name="CountryCodeISO" ns="3" expanded="1"/>
+													<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+													<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+													<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+												</entry>
+												<entry name="AddressPresentation" ns="7" expanded="1">
+													<entry name="HouseLetterNL" ns="3" expanded="1"/>
+													<entry name="HouseNumberAddition" ns="3" expanded="1"/>
+													<entry name="HouseNumberNL" ns="3" expanded="1"/>
+													<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+													<entry name="PostalCodeNL" ns="3" expanded="1"/>
+													<entry name="StreetNameNL" ns="3" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="GiftImmovablePropertyAddressPresentation" ns="6" expanded="1">
+												<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+													<entry name="CountryCodeISO" ns="3" expanded="1"/>
+													<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+												</entry>
+												<entry name="AddressPresentation" ns="7" expanded="1">
+													<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="GiftSpecification" ns="6" expanded="1">
+												<entry name="AppealOnFaciltySceneryLawIndication" ns="5" expanded="1"/>
+												<entry name="CapitalToBeMaintainedDescription" ns="5" expanded="1"/>
+												<entry name="CapitalToBeMaintainedValue" ns="5" expanded="1"/>
+												<entry name="DonationsOnPaper" ns="5" expanded="1"/>
+												<entry name="DonationsOnPaperDeedDate" ns="5" expanded="1"/>
+												<entry name="DonationsOnPaperInterestPercentage" ns="5" expanded="1"/>
+												<entry name="DonationsOnPaperInterestType" ns="5" expanded="1"/>
+												<entry name="EstateSceneryLawDisposalNumber" ns="5" expanded="1"/>
+												<entry name="EstateSceneryLawOpenedIndication" ns="5" expanded="1"/>
+												<entry name="EstateSceneryLawRankingIndication" ns="5" expanded="1"/>
+												<entry name="ExemptionMoralObligation" ns="5" expanded="1"/>
+												<entry name="ExpensiveStudyAlreadyInvestedAmount" ns="5" expanded="1"/>
+												<entry name="ExpensiveStudyRemainingDonationAmount" ns="5" expanded="1"/>
+												<entry name="ExpensiveStudyToBeInvestedAmount" ns="5" expanded="1"/>
+												<entry name="GiftCashMoneyBalances" ns="5" expanded="1"/>
+												<entry name="GiftDate" ns="5" expanded="1"/>
+												<entry name="GiftDebtRemissionValue" ns="5" expanded="1"/>
+												<entry name="GiftExemptionDebtor" ns="5" expanded="1"/>
+												<entry name="GiftExemptionExpensiveStudyIncreased" ns="5" expanded="1"/>
+												<entry name="GiftExemptionOneOffIncreased" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyAnnualGroundLeaseValue" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyAnnualRentValue" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyCommercialValue" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyExposedValue" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyLandRegistryDesignation" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyLawValue" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyMarketCompliantRentIndication" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyPurchasePrice" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyRemittedPurchasePrice" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertySurfaceSquareMetresTotal" ns="5" expanded="1"/>
+												<entry name="GiftImmovablePropertyTransferredPartNumerator" ns="5" expanded="1"/>
+												<entry name="GiftLonglivedDependenceIndication" ns="5" expanded="1"/>
+												<entry name="GiftOtherDescription" ns="5" expanded="1"/>
+												<entry name="GiftOtherValue" ns="5" expanded="1"/>
+												<entry name="GiftPeriodicFirstDate" ns="5" expanded="1"/>
+												<entry name="GiftPeriodicLastDate" ns="5" expanded="1"/>
+												<entry name="GiftUsufructValue" ns="5" expanded="1"/>
+												<entry name="ImmovablePropertyGroundLeaseEnddate" ns="5" expanded="1"/>
+												<entry name="ImmovablePropertyResidenceIndication" ns="5" expanded="1"/>
+												<entry name="ImmovablePropertyTenantRecipientPartnerIndication" ns="5" expanded="1"/>
+												<entry name="ProspectivePartnerPrematurelyDeceasedIndication" ns="5" expanded="1"/>
+												<entry name="TaxLeviedOnPeriodicPaymentIndication" ns="5" expanded="1"/>
+											</entry>
+											<entry name="PersonLifeDependentSpecification" ns="6" expanded="1">
+												<entry name="PersonLifeDependentDateOfBirth" ns="5" expanded="1"/>
+											</entry>
+											<entry name="PostponementSpecification" ns="6" expanded="1"/>
+											<entry name="ProvidedBuildingAddressPresentation" ns="6">
+												<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+													<entry name="CountryCodeISO" ns="3" expanded="1"/>
+													<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+													<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+													<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+													<entry name="StreetNameAbroad" ns="11" expanded="1"/>
+												</entry>
+												<entry name="AddressPresentation" ns="7">
+													<entry name="HouseLetterNL" ns="3" expanded="1"/>
+													<entry name="HouseNumberAddition" ns="3" expanded="1"/>
+													<entry name="HouseNumberNL" ns="3" expanded="1"/>
+													<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+													<entry name="PostalCodeNL" ns="3" expanded="1"/>
+													<entry name="StreetNameNL" ns="3" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="ProvidedBuildingSpecification" ns="6" expanded="1">
+												<entry name="ProvidedBuildingAddressPresentation" ns="6" expanded="1">
+													<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+														<entry name="CountryCodeISO" ns="3" expanded="1"/>
+														<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+													</entry>
+													<entry name="AddressPresentation" ns="7" expanded="1">
+														<entry name="HouseLetterNL" ns="3" expanded="1"/>
+														<entry name="HouseNumberNL" ns="3" expanded="1"/>
+														<entry name="PlaceOfResidenceNL" ns="3" expanded="1"/>
+													</entry>
+												</entry>
+												<entry name="ProvidedBuildingCommercialValueAmount" ns="5" expanded="1"/>
+												<entry name="ProvidedBuildingTransferDate" ns="5" expanded="1"/>
+												<entry name="ProvidedBuildingTransferredPartNumerator" ns="5" expanded="1"/>
+												<entry name="ProvidedBuildingTransferredPartValue" ns="5" expanded="1"/>
+												<entry name="ProvidedBuildingTransferredPurchasePrice" ns="5" expanded="1"/>
+											</entry>
+											<entry name="RecipientPartnerAddressPresentation" ns="6" expanded="1">
+												<entry name="AddressAbroadPresentation" ns="7" expanded="1">
+													<entry name="CountryCodeISO" ns="3" expanded="1"/>
+													<entry name="HouseNumberAbroad" ns="11" expanded="1"/>
+													<entry name="PlaceOfResidenceAbroad" ns="11" expanded="1"/>
+													<entry name="PostalCodeAbroad" ns="11" expanded="1"/>
+													<entry name="StreetNameAbroad" ns="11" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="unit" expanded="1"/>
+										<entry name="context" expanded="1">
+											<entry name="entity" expanded="1">
+												<entry name="segment" expanded="1"/>
+											</entry>
+											<entry name="period" expanded="1"/>
+											<entry name="scenario" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<xbrl schema="http://www.nltaxonomie.nl/nt18/bd/20240221/entrypoints/bd-rpt-erf-aangifte-2024.xsd" inputinstance="NT18-BD-20240221 Voorbeeldinstances\SCHENK-2024\VB-01_bd-rpt-erg-aangifte-2024.xbrl" outputinstance="NT18-BD-20240221 Voorbeeldinstances\ERF-2024\output.xbrl"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="139" lty="642" rbx="208" rby="659"/>
+					<data>
+						<constant value="1770027" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="15" kind="5">
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="263" lty="622" rbx="313" rby="675"/>
+				</component>
+				<component name="if-else" library="core" uid="14" kind="4">
+					<sources>
+						<datapoint pos="0" key="15"/>
+						<datapoint pos="1" key="19"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="337" lty="622" rbx="429" rby="694"/>
+				</component>
+				<component name="if-else" library="core" uid="12" kind="4">
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="5"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="323" lty="512" rbx="415" rby="584"/>
+				</component>
+				<component name="test aanmaak xbrl01" library="xlsx" uid="13" kind="26">
+					<properties/>
+					<view ltx="116" lty="30" rbx="481" rby="442"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Workbook" expanded="1">
+										<entry name="Worksheet" expanded="1" displayselectionmode="selection">
+											<entry name="Row" expanded="1">
+												<entry name="Cell" datatype="string"/>
+											</entry>
+										</entry>
+										<entry name="Worksheet" expanded="1">
+											<condition>
+												<expression>
+													<function name="equal-ignorecase" library="xlsx">
+														<expression>
+															<attribute name="Name"/>
+														</expression>
+														<expression>
+															<constant value="Blad1"/>
+														</expression>
+													</function>
+												</expression>
+											</condition>
+											<ranges>
+												<range id="1" start="1"/>
+											</ranges>
+											<entry name="Row" expanded="1" displayselectionmode="selection">
+												<entry name="Cell" datatype="string"/>
+											</entry>
+											<entry name="Row" expanded="1">
+												<condition>
+													<expression>
+														<function name="is-range-id">
+															<expression>
+																<constant value="1" datatype="long"/>
+															</expression>
+														</function>
+													</expression>
+												</condition>
+												<entry name="Cell" displayselectionmode="selection" datatype="string"/>
+												<entry name="Cell" outkey="11" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="1" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" outkey="12" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="2" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="3" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="4" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="5" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="6" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="7" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+												<entry name="Cell" datatype="string">
+													<condition>
+														<expression>
+															<function name="logical-and" library="core">
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="n"/>
+																		</expression>
+																		<expression>
+																			<constant value="8" datatype="long"/>
+																		</expression>
+																	</function>
+																</expression>
+																<expression>
+																	<function name="equal" library="core">
+																		<expression>
+																			<attribute name="t"/>
+																		</expression>
+																		<expression>
+																			<constant value="s"/>
+																		</expression>
+																	</function>
+																</expression>
+															</function>
+														</expression>
+													</condition>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<excel inputinstance="test aanmaak xbrl01.xlsx"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="5"/>
+							<edge vertexkey="19"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="7"/>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

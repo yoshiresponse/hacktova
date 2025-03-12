@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+    <resources />
+    <component name="defaultmap" uid="1" editable="1" blackbox="0">
+        <properties SelectedLanguage="builtin" />
+        <structure>
+            <children>
+                <component name="input" library="core" uid="6" kind="6">
+                    <sources>
+                        <datapoint />
+                    </sources>
+                    <targets>
+                        <datapoint />
+                    </targets>
+                    <view ltx="172" lty="46" rbx="245" rby="82" />
+                    <data>
+                        <input datatype="string">output.xbrl</input>
+                        <parameter usageKind="input" name="input" />
+                    </data>
+                </component>
+                <component name="bd-rpt-erf-aangifte-2024" library="xbrl" uid="7" kind="27">
+                    <properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1" XBRLShowAllConcepts="1" XBRLShowAllConceptsRaw="1" />
+                    <view ltx="1426" lty="74" rbx="2075" rby="1113" />
+                    <data>
+                        <root scrollposition="8472">
+                            <header>
+                                <namespaces>
+                                    <namespace uid="http://www.xbrl.org/2003/instance" />
+                                    <namespace uid="http://www.altova.com/mapforce" />
+                                    <namespace uid="http://www.xbrl.org/2003/linkbase" />
+                                    <namespace uid="http://www.nltaxonomie.nl/nt18/sbr/20230301/dictionary/nl-common-data" />
+                                    <namespace uid="http://www.nltaxonomie.nl/2013/xbrl/sbr-dimensional-concepts" />
+                                    <namespace uid="http://www.nltaxonomie.nl/nt18/bd/20240221/dictionary/bd-data-ext1" />
+                                    <namespace uid="http://www.nltaxonomie.nl/nt18/bd/20240221/dictionary/bd-tuples-ext1" />
+                                    <namespace uid="http://www.nltaxonomie.nl/nt18/bd/20231213/dictionary/bd-tuples" />
+                                    <namespace uid="view" />
+                                    <namespace uid="http://www.nltaxonomie.nl/nt18/bd/20240221/presentation/bd-abstr-ext1" />
+                                    <namespace />
+                                    <namespace uid="http://www.nltaxonomie.nl/nt18/bd/20231213/dictionary/bd-data" />
+                                </namespaces>
+                            </header>
+                        </root>
+                        <xbrl schema="http://www.nltaxonomie.nl/nt18/bd/20240221/entrypoints/bd-rpt-erf-aangifte-2024.xsd" inputinstance="output.xbrl" outputinstance="output.xbrl" />
+                    </data>
+                </component>
+            </children>
+            <graph directed="1">
+                <edges />
+                <vertices>
+                    <vertex vertexkey="6">
+                        <edges />
+                    </vertex>
+                    <vertex vertexkey="7">
+                        <edges />
+                    </vertex>
+                </vertices>
+            </graph>
+        </structure>
+    </component>
+</mapping>
