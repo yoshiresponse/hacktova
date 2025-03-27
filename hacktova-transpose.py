@@ -36,6 +36,9 @@ def group_processed_sheet(input_file, output_file):
         if not path_H:
             continue
 
+        # Sort the group rows by column D (index 3) in ascending alphabetical order.
+        group = group.sort_values(by=[10])
+
         # Use the first row's value in column C (index 2) as the sheet name.
         sheet_name = str(group.iloc[0, 2])
         # Ensure the sheet name is a valid Excel name (max 31 characters).
@@ -50,15 +53,14 @@ def group_processed_sheet(input_file, output_file):
         ws['C1'] = path_J
 
         # Starting from column D (column index 4), process each row in the group.
-        # For each row, write three consecutive cells:
-        #   first cell: value from column D (index 3)
-        #   second cell: value from column K (index 10)
-        #   third cell: empty
+        # For each row, write two consecutive cells:
+        #   first cell (col2): value from column K (index 10)
+        #   second cell (below in row 2): value from column Q (index 16)
         start_col = 4  # Column D
         for idx, (_, row) in enumerate(group.iterrows()):
             offset = idx * width
-            col1 = start_col + offset      # for column D value.
-            col2 = col1 + 1                # for column K value.
+            col1 = start_col + offset      # (unused cell if re-enabled for row[3])
+            col2 = col1 + 1                # for column K / Q values.
             # ws.cell(row=1, column=col1, value=row[3])
             ws.cell(row=1, column=col2, value=row[10])
             ws.cell(row=2, column=col2, value=row[16])
